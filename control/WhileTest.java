@@ -26,6 +26,19 @@ public class WhileTest {
         spinner = 0;
         while (Math.random() < 0.99) spinner++;
         System.out.println("while was working: " + spinner);
+
+
+        //do-while
+        //use case: you need the iteration to work at least one time
+        //before it stops
+        spinner = 0;
+        do {
+            System.out.println("spin the wheel: " + spinner++);
+        } while (Math.random() < 0.99);
+
+        do spinner++; while (Math.random() < 0.99);
+        System.out.println("do-while worked: " + spinner + " times");
+
     }
 }
 /* Output: (First and Last 5 Lines)
